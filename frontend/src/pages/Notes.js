@@ -93,7 +93,7 @@ export default function Notes() {
         <div className="sidebar-header">
           <h3>My Notes</h3>
           <button className="add-btn" onClick={handleNewNote}>
-            <Plus size={18} />
+            <Plus size={20} />
           </button>
         </div>
 
