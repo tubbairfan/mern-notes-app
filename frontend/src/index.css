@@ -1,0 +1,356 @@
+/* Right panel styles */
+.note-content {
+  flex: 1;
+  padding: 20px;
+  background: #f9fbfd;  /* soft background */
+  border-left: 1px solid #e0e0e0; /* subtle divider */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.note-details {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.note-details h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #1a237e; /* professional blue */
+}
+
+.note-details p {
+  white-space: pre-wrap; /* preserve line breaks */
+  word-wrap: break-word;  /* break long words if needed */
+  overflow-wrap: break-word;
+  max-width: 100%;        /* keep inside container */
+}
+
+.note-details b {
+  color: #1976d2;
+}
+
+.note-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.note-actions button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.note-actions button:hover {
+  background: #1565c0;
+}
+
+.note-actions button:last-child {
+  background: #e53935; /* red delete */
+}
+
+.note-actions button:last-child:hover {
+  background: #c62828;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between; /* ensures footer stays at bottom */
+}
+
+.sidebar-footer {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Placeholder style */
+.placeholder {
+  font-size: 1.1rem;
+  color: #888;
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+}
+.form-container {
+  max-width: 380px;
+  margin: 80px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #202124;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #4285f4; /* Google blue */
+  box-shadow: 0 0 0 1px #4285f4;
+}
+
+.form-container button {
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: #4285f4; /* Google blue */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-container button:hover {
+  background: #3367d6;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.form-container a {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.notes-layout {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+/* Add this in your Notes.css or global CSS */
+.note-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.note-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.note-item.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.note-separator {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* blur-like line */
+  margin-top: 8px;
+}
+
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 2px;
+  border-radius: 60%;
+  cursor: pointer;
+}
+
+.search-box {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.note-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.note-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.note-item:hover {
+  background: #f3f3f3;
+}
+
+.note-item.active {
+  background: #e6f0ff;       /* soft light blue background */
+  color: #0d47a1;            /* deep blue text */
+  border-left: 4px solid #1976d2; /* medium blue accent bar */
+}
+
+
+/* Main content */
+.note-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.placeholder {
+  color: #888;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note-details h2 {
+  margin-bottom: 10px;
+}
+
+.note-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(1) {
+  background: #007bff;
+  color: white;
+}
+
+button:nth-child(2) {
+  background: #dc3545;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.form-container, .notes-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+input, textarea, button {
+  
+  margin: .5rem 0;
+  padding: .7rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover { background: #0056b3; }
+
+.note-card {
+  background: #fafafa;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin: 4px 0;
+}
